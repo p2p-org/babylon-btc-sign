@@ -14,6 +14,11 @@ yarn install
 }
 ```
 
+## Print your public key
+```shell
+node public-key.js
+```
+
 ## Sing transaction
 ```shell
 node sing.js 'transacton in hex'

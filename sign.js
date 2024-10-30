@@ -1,13 +1,12 @@
 import  { Psbt, initEccLib, networks} from 'bitcoinjs-lib';
 import { signPsbtWithKeyPathAndScriptPath } from '@okxweb3/coin-bitcoin';
-import { readFileSync} from 'fs';
+import { readFileSync } from 'fs';
 import * as tinysecp from 'tiny-secp256k1';
 
 initEccLib(tinysecp);
 const config = JSON.parse(readFileSync('./config.json'));
 
-
-const network = config.network === 'testnet' ?  networks.testnet : networks.bitcoin; // Используйте bitcoin.networks.bitcoin для основной сети
+const network = config.network === 'testnet' ?  networks.testnet : networks.bitcoin;
 
 const txHex = process.argv[2];
 
