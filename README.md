@@ -19,8 +19,8 @@ yarn install
 node public-key.js
 ```
 
-## Sing transaction
+## Sign transaction
 ```shell
-node sing.js 'transacton in hex'
+node sign.js 'transacton in hex'
 ```
 
