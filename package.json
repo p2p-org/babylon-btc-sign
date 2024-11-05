@@ -6,8 +6,9 @@
   "author": "timophey01 <timophey01@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@okxweb3/coin-bitcoin": "^1.0.26",
+    "@okxweb3/coin-bitcoin": "*",
     "bitcoinjs-lib": "^7.0.0-rc.0",
+    "decimal.js": "^10.4.3",
     "ecpair": "^3.0.0-rc.0",
     "tiny-secp256k1": "^2.2.3"
   }

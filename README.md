@@ -24,3 +24,20 @@ node public-key.js
 node sign.js 'transacton in hex'
 ```
 
+### Docker examples
+
+## Docker build
+```shell
+docker build -t babylon-btc-sign .
+```
+
+## Docker run sign.js
+```shell
+docker run -v $(pwd)/config.js:/app/config.js babylon-btc-sign node sign.js 'transacton in hex'
+```
+
+## Docker run public-key.js
+```shell
+docker run -v $(pwd)/config.js:/app/config.js babylon-btc-sign node public-key.js
+```
+
